@@ -16,7 +16,7 @@ const POKEMON_COUNT_TOTAL = 1279;
 const app: Express = express();
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://pokedex-react-v2.vercel.app"],
     optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
   })
 );
